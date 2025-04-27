@@ -18,7 +18,7 @@ body {
 
 header {
   width: 100%;
-  height: 10vh;
+  height: 10dvh;
   background-color: var(--third-color);
   padding: 1rem;
   color: var(--primary-color);
@@ -40,6 +40,27 @@ header > nav > button {
 
 #content {
   width: 100%;
-  height: 90vh;
+  height: 90dvh;
   background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#headline {
+  width: 20ch;
+  font-size: 3rem;
+  color: var(--fourth-color);
+}
+
+.left-container,
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner-image {
+  width: calc(50% + 20px);
+  height: calc(50% + 10px);
+  border-radius: 100%;
 }
