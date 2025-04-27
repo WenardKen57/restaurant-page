@@ -24,6 +24,7 @@ header {
   color: var(--primary-color);
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 header > nav {
@@ -46,13 +47,23 @@ header > nav > button {
   grid-template-columns: 1fr 1fr;
 }
 
-#headline {
-  width: 20ch;
+#headline-title {
   font-size: 3rem;
+  color: var(--third-color);
+}
+
+#headline {
+  font-size: 2rem;
   color: var(--fourth-color);
 }
 
-.left-container,
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+
 .right-container {
   display: flex;
   justify-content: center;
@@ -60,7 +71,7 @@ header > nav > button {
 }
 
 #banner-image {
-  width: calc(50% + 20px);
-  height: calc(50% + 10px);
+  width: calc(50% + 100px);
+  height: calc(50% + 100px);
   border-radius: 100%;
 }

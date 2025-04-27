@@ -21,6 +21,10 @@ leftContainer.classList.add("left-container");
 const rightContainer = document.createElement("div");
 rightContainer.classList.add("right-container");
 
+const headlineTitle = document.createElement("h2");
+headlineTitle.textContent = "First ever ice cream restaurant!";
+headlineTitle.id = "headline-title";
+
 const headline = document.createElement("h3");
 headline.textContent = "Chill Out with the Creamiest Scoops in Town – Your Sweet Escape Awaits!";
 headline.id = "headline";
@@ -39,6 +43,7 @@ nav.appendChild(navAboutBtn);
 
 header.appendChild(logo);
 header.appendChild(nav);
+leftContainer.appendChild(headlineTitle);
 leftContainer.appendChild(headline);
 rightContainer.appendChild(iceCreamBanner);
 contentContainer.appendChild(leftContainer);
